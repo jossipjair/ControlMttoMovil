@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlanco"
+    tools:context=".Vista.MainActivity">
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Menú Principal"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblMenuPrincipal" />
+
+          android:layout_below="@+id/lblMenuPrincipal"
+-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imbMaquinaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorBlanco"
+            android:src="@drawable/tractores"
+            />
+
+        <TextView
+            android:id="@+id/lblMenuMaquinaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imbMaquinaria"
+            android:layout_marginTop="10dp"
+            android:text="Maquinaria"
+            android:textAlignment="center"
+            android:textColor="@color/colorAzul"
+            android:textSize="20dp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/imbOrdenesTrabajo"
+            android:layout_below="@+id/lblMenuMaquinaria"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlanco"
+            android:src="@drawable/ordenes" />
+
+        <TextView
+            android:id="@+id/lblMenuOT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imbOrdenesTrabajo"
+            android:text="Registro Órden de Trabajo"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorAzul"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+        <ImageButton
+            android:id="@+id/imbExportarExcel"
+            android:layout_below="@+id/lblMenuOT"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlanco"
+            android:src="@drawable/sobresalir" />
+
+        <TextView
+            android:layout_below="@+id/imbExportarExcel"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exportar a Excel"
+            android:textAlignment="center"
+            android:textColor="@color/colorAzul"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

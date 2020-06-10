@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/colorBlanco"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Sistema Mecánico"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblRegistroMaquinaMecanico" />
+
+    <EditText
+        android:id="@+id/txtSintomaFallaMecanicoOT"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/lblRegistroMaquinaMecanico"
+        android:layout_width="match_parent"
+        android:hint="Sintoma de Falla Sistema Mecánico"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtCausaFallaMecanicoOT"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtSintomaFallaMecanicoOT"
+        android:layout_width="match_parent"
+        android:hint="Causa de Falla Sistema Mecánico"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtSolucionSistemaMecanicoOT"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtCausaFallaMecanicoOT"
+        android:layout_width="match_parent"
+        android:hint="Solución Sistema Mecánico"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtSituacionGeneralMecanicoOT"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtSolucionSistemaMecanicoOT"
+        android:layout_width="match_parent"
+        android:hint="Situación General Sistema Mecánico"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtRepuestosMecanicoOT"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtSituacionGeneralMecanicoOT"
+        android:layout_width="match_parent"
+        android:hint="Repuestos Utilizados Sistema Mecánico"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGuardarSistemaMecanico"
+        android:layout_below="@id/txtRepuestosMecanicoOT"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorVerde"
+        android:textColor="@color/colorBlanco"
+        android:text="Guardar Datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<!--
+    <Button
+        android:id="@+id/btnCancelaSistemaMecanico"
+        android:layout_below="@id/btnGuardarSistemaMecanico"
+        android:layout_marginTop="20dp"
+        android:text="Cancelar"
+        android:background="@color/colorRojo"
+        android:textColor="@color/colorBlanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+-->
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

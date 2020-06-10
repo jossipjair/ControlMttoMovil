@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Registro de Suministros"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblRegistroSuministro" />
+
+
+    <TextView
+        android:id="@+id/lblSuministros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblRegistroSuministro"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorNegro"
+        android:text="Dato Suministro Utilizado"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtTipoSuministro"
+        android:layout_below="@id/lblSuministros"
+        android:layout_marginTop="15dp"
+        android:hint="Nombre de Suministro"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtCantidadSuministro"
+        android:layout_below="@id/txtTipoSuministro"
+        android:hint="Cantidad"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtUnidadMedida"
+        android:layout_below="@id/txtCantidadSuministro"
+        android:hint="Unidad de Medida"
+        android:layout_marginTop="15dp"
+        android:inputType="textCapCharacters"
+        android:maxLength="20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtCantidadUtilizada"
+        android:layout_below="@id/txtUnidadMedida"
+        android:hint="Cantidad Real Utilizada"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtObservacion"
+        android:layout_below="@id/txtCantidadUtilizada"
+        android:hint="Observación"
+        android:layout_marginTop="15dp"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAgregarDetalleSuministro"
+        android:text="Agregar Detalle Suministro"
+        android:layout_below="@id/txtObservacion"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+   <!-- <Button
+         android:id="@+id/btnVolverOrdenTrabajo"
+         android:layout_below="@id/btnAgregarDetalleSuministro"
+         android:text="Volver a Órden de Trabajo"
+         android:textColor="@color/colorBlanco"
+        android:layout_marginTop="20dp"
+         android:background="@color/colorRojo"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+-->
+
+            <GridView
+                android:id="@+id/gvSuministros"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/btnAgregarDetalleSuministro"
+                android:layout_marginTop="20dp"
+                android:numColumns="3"></GridView>
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

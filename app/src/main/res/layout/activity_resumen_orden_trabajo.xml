@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.ResumenOrdenTrabajo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Resumen Órden de Trabajo"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblRegistroMaquina" />
+
+    <TextView
+        android:id="@+id/lblFechaOrdenTrabajo"
+        android:text="Fecha: 04/05/2019"
+        android:textColor="@color/colorNegro"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/lblRegistroMaquina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnRegistrarNuevaOT"
+        android:layout_below="@id/lblFechaOrdenTrabajo"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorVerde"
+        android:text="GENERAR NUEVA ÓRDEN DE TRABAJO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/gvResumenOt"
+        android:layout_marginTop="20dp"
+        android:numColumns="3"
+        android:layout_below="@id/btnRegistrarNuevaOT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+
+</RelativeLayout>

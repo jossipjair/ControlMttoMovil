@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.RegistroOT">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Órden de Trabajo"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAzul"
+                android:id="@+id/lblRegistroMaquina" />
+
+            <TextView
+                android:id="@+id/lblNombreMaquinaOT"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/lblRegistroMaquina"
+                android:textStyle="bold"
+
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorNegro"
+                android:text="Descripción de Máquina"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnSeleccionaMaquina"
+                android:layout_width="match_parent"
+                android:text="...Selecciona Maquinaria..."
+                android:layout_below="@+id/lblNombreMaquinaOT"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtNombreMaquinariaOT"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btnSeleccionaMaquina"
+                android:layout_width="match_parent"
+                android:hint="Nombre de Maquinaria"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtModeloMaquinariaOT"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtNombreMaquinariaOT"
+                android:layout_width="match_parent"
+                android:hint="Modelo de Maquinaria"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtSerieMaquinariaOT"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtModeloMaquinariaOT"
+                android:layout_width="match_parent"
+                android:hint="Serie de Maquinaria"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtSerieMotorOT"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtSerieMaquinariaOT"
+                android:layout_width="match_parent"
+                android:hint="Serie de Motor"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtHorometroOT"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtSerieMotorOT"
+                android:layout_width="match_parent"
+                android:hint="Horómetro"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtObservacionOT"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtHorometroOT"
+                android:layout_width="match_parent"
+                android:hint="Observación Órden de Trabajo"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content" />
+
+            <!-- Mantenimiento Electrico -->
+
+            <TextView
+                android:id="@+id/lblSistemaElectrico"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/txtObservacionOT"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorNegro"
+                android:text="Sistema Eléctrico"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAgregaElectrico"
+                android:layout_width="match_parent"
+                android:text="Agregar Detalle a Sistema Eléctrico"
+                android:layout_below="@+id/lblSistemaElectrico"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Mantenimiento Mecanico  -->
+            <TextView
+                android:id="@+id/lblSistemaMecanico"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/btnAgregaElectrico"
+                android:textStyle="bold"
+
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorNegro"
+                android:text="Sistema Mecánico"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAgregaMecanico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lblSistemaMecanico"
+                android:text="Agrega Detalle a Sistema Mecánico"/>
+
+
+            <!-- Suministros utilizados -->
+            <TextView
+                android:id="@+id/lblAgregaProductos"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/btnAgregaMecanico"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorNegro"
+                android:text="Suministros Utilizados"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAgregaSuministros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lblAgregaProductos"
+                android:text="Agrega Detalle de Suministros"/>
+
+            <Button
+                android:id="@+id/btnGuardarOrdenTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAzul"
+                android:textColor="@color/colorBlanco"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/btnAgregaSuministros"
+                android:text="Guardar Órden de Trabajo"/>
+
+            <Button
+                android:id="@+id/btnVolverMenuOT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRojo"
+                android:textColor="@color/colorBlanco"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/btnGuardarOrdenTrabajo"
+                android:text="Volver a Menú"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
